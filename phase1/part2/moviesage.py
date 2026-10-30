@@ -70,3 +70,4 @@ final_prompt = prompt.invoke({
 res = model.invoke(final_prompt)
 movie = parser.parse(res.content[0]["text"])
 print(movie.model_dump_json(indent=2))
+
